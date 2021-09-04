@@ -12,6 +12,7 @@ class TodolistsController < ApplicationController
   end
 
   def index
+   @lists = List.a
   end
 
   private
