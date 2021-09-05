@@ -9,6 +9,9 @@ class TodolistsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def create
     # １. データを新規登録するためのインスタンス作成
     list = List.new(list_params)
     # ２. データをデータベースに保存するためのsaveメソッド実行
