@@ -39,6 +39,9 @@ end
     redirect_to todolist_path(list.id)
   end
 
+  def destroy
+  end
+
   private
   # ストロングパラメータ
   def list_params
