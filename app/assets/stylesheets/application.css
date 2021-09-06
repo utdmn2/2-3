@@ -17,7 +17,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+}
+
+header, h1, nav, .list-comment {
+  font-family: 'Kaushan Script', cursive, sans-serif;
 }
 
 header {
@@ -35,10 +39,10 @@ header .headline {
 nav {
   width: 880px;
   margin: 0 auto;
-
   border-top: solid 0.7px #000000;
   border-bottom: solid 0.7px #000000;
 }
+
 
 .nav-list {
   text-align: center;
@@ -69,8 +73,21 @@ main {
   width: 200px;
   height: 250px;
   margin: 10px;
+  position: relative;
 }
 
 .list-comment {
   width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.list-body {
+  color: gray;
+  font-size: 12px;
+}
+
+.list-title {
+  font-size: 18px;
 }
